@@ -1,0 +1,45 @@
+LTspice 24.1.9 for Windows
+Circuit: C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\Charger.net
+Start Time: Tue Aug  4 19:41:58 2026
+solver = Normal
+Maximum thread count: 22
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+vernier = 0.5
+vernier = 0.25
+vernier = 0.333333
+Gmin = 8.98112e-05
+vernier = 0.444444
+Gmin = 3.46527e-05
+vernier = 0.592592
+vernier = 0.790123
+Gmin = 7.35535e-06
+vernier = 1
+Gmin = 8.60498e-07
+Gmin = 9.23953e-08
+Gmin = 9.92087e-09
+Gmin = 1.06525e-09
+Gmin = 1.1438e-10
+Gmin = 1.22814e-11
+Gmin = 1.31871e-12
+Gmin = 1.41595e-13
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 0.523 seconds.
+
+Files loaded:
+C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\Charger.net
+C:\Users\jmstr\AppData\Local\LTspice\lib\cmp\standard.dio
+C:\Users\jmstr\AppData\Local\LTspice\lib\cmp\standard.mos
+C:\Users\jmstr\AppData\Local\LTspice\lib\sub\UniversalOpAmp2.lib
+
