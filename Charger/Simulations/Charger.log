@@ -1,6 +1,6 @@
 LTspice 24.1.9 for Windows
 Circuit: C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\311Project\Charger\Simulations\Charger.net
-Start Time: Fri Aug 14 15:48:18 2026
+Start Time: Fri Aug 14 16:33:28 2026
 solver = Normal
 Maximum thread count: 22
 tnom = 27
@@ -32,13 +32,78 @@ Starting source stepping with srcstepmethod=0
 Source Step = 3.0303%
 Source Step = 33.3333%
 Source Step = 63.6364%
-Source Step = 93.9394%
+Source Step = 79.3561%
+Source Step = 79.3768%
+Source Step = 79.4064%
+Source Step = 79.436%
+Source Step = 79.4656%
+Source Step = 79.4951%
+vernier = 0.00146484
+Source Step = 79.5292%
+Source Step = 79.5736%
+Source Step = 79.618%
+Source Step = 79.6623%
+Source Step = 79.7067%
+vernier = 0.00219727
+Source Step = 79.7556%
+Source Step = 79.8221%
+Source Step = 79.8887%
+Source Step = 79.9553%
+Source Step = 80.0219%
+vernier = 0.0032959
+Source Step = 80.0918%
+Source Step = 80.1917%
+Source Step = 80.2916%
+Source Step = 80.3914%
+Source Step = 80.4913%
+Source Step = 80.5912%
+vernier = 0.00494385
+Source Step = 80.741%
+Source Step = 80.8908%
+Source Step = 81.0406%
+Source Step = 81.1904%
+Source Step = 81.3403%
+vernier = 0.00741577
+Source Step = 81.5575%
+Source Step = 81.7822%
+Source Step = 82.0069%
+Source Step = 82.2316%
+Source Step = 82.4564%
+vernier = 0.0111237
+Source Step = 82.771%
+Source Step = 83.1081%
+Source Step = 83.4451%
+Source Step = 83.7822%
+Source Step = 84.1193%
+vernier = 0.0166855
+Source Step = 84.5744%
+Source Step = 85.08%
+Source Step = 85.5856%
+Source Step = 86.0912%
+Source Step = 86.5968%
+vernier = 0.0250282
+Source Step = 87.2541%
+Source Step = 88.0126%
+Source Step = 88.771%
+Source Step = 89.5294%
+Source Step = 90.2879%
+vernier = 0.0375423
+Source Step = 91.2359%
+Source Step = 92.3736%
+Source Step = 93.5112%
+Source Step = 94.6489%
+Source Step = 95.7865%
+vernier = 0.0563135
+Source Step = 97.1517%
+Source Step = 98.8581%
 Source stepping succeeded in finding the operating point.
 
-Total elapsed time: 0.592 seconds.
+.step 
+Total elapsed time: 2.678 seconds.
 
 Files loaded:
 C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\311Project\Charger\Simulations\Charger.net
+C:\Users\jmstr\AppData\Local\LTspice\lib\cmp\standard.bjt
 C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\311Project\Charger\Simulations\irf4905slpbf.txt
 C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\311Project\Charger\Simulations\TLC081.mod
 C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\311Project\Charger\Simulations\BAT85.txt
