@@ -1,0 +1,38 @@
+LTspice 24.1.9 for Windows
+Circuit: C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\311Project\Charger\Simulations\Charger_OVPOCP_Latch.net
+Start Time: Mon Aug 17 14:28:52 2026
+solver = Alternate
+Maximum thread count: 22
+tnom = 27
+temp = 27
+method = trap
+C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\311Project\Charger\Simulations\Charger_OVPOCP_Latch.net(17): Limiting rise time to 0.05.
+
+V1 Vover_voltage 0 PULSE(0 5 0.5 0 0 0.5 1)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\311Project\Charger\Simulations\Charger_OVPOCP_Latch.net(17): Limiting fall time to 0.05.
+
+V1 Vover_voltage 0 PULSE(0 5 0.5 0 0 0.5 1)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\311Project\Charger\Simulations\Charger_OVPOCP_Latch.net(18): Limiting rise time to 0.05.
+
+V2 Vover_current 0 PULSE(0 5 0.5 0 0 0.5 1)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\311Project\Charger\Simulations\Charger_OVPOCP_Latch.net(18): Limiting fall time to 0.05.
+
+V2 Vover_current 0 PULSE(0 5 0.5 0 0 0.5 1)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Direct Newton iteration for .op point succeeded.
+
+Simulation stopped by user.
+Total elapsed time: 226.476 seconds.
+
+Files loaded:
+C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\311Project\Charger\Simulations\Charger_OVPOCP_Latch.net
+C:\Users\jmstr\AppData\Local\LTspice\lib\cmp\standard.bjt
+C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\311Project\Charger\Simulations\irf4905slpbf.txt
+C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\311Project\Charger\Simulations\TLC081.mod
+C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\311Project\Charger\Simulations\BAT85.txt
+C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\311Project\Charger\Simulations\lm393.lib
+C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\311Project\Charger\Simulations\irf3205.spi
+
