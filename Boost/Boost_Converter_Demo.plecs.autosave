@@ -160,7 +160,7 @@ Plecs {
           LabelPosition east
           Parameter {
             Variable      "V"
-            Value         "3.33"
+            Value         "3.5"
             Show          on
           }
         }
@@ -298,7 +298,7 @@ Plecs {
           Probe {
             Component     "FETD"
             Path          "Open-Loop"
-            Signals       {"Device voltage", "Device gate input"}
+            Signals       {"Device gate input", "Device voltage"}
           }
           Probe {
             Component     "Step"
@@ -610,12 +610,12 @@ Plecs {
           }
           Parameter {
             Variable      "Before"
-            Value         "0.33"
+            Value         "0.30"
             Show          off
           }
           Parameter {
             Variable      "After"
-            Value         "0.33"
+            Value         "0.30"
             Show          off
           }
           Parameter {
