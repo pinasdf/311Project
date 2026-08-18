@@ -146,7 +146,7 @@ Plecs {
           LabelPosition west
           Parameter {
             Variable      "R"
-            Value         "50"
+            Value         "5"
             Show          on
           }
         }
@@ -160,7 +160,7 @@ Plecs {
           LabelPosition east
           Parameter {
             Variable      "V"
-            Value         "3.5"
+            Value         "2.5"
             Show          on
           }
         }
@@ -298,7 +298,8 @@ Plecs {
           Probe {
             Component     "FETD"
             Path          "Open-Loop"
-            Signals       {"Device gate input", "Device voltage"}
+            Signals       {"Device voltage", "Device current", "Device gate in"
+"put"}
           }
           Probe {
             Component     "Step"
@@ -314,11 +315,6 @@ Plecs {
             Component     "D1"
             Path          "Open-Loop"
             Signals       {"Diode current"}
-          }
-          Probe {
-            Component     "FETD"
-            Path          "Open-Loop"
-            Signals       {"Device voltage"}
           }
         }
         Component {
@@ -343,11 +339,6 @@ Plecs {
             Component     "C1"
             Path          "Open-Loop"
             Signals       {"Capacitor current"}
-          }
-          Probe {
-            Component     "FETD"
-            Path          "Open-Loop"
-            Signals       {"Device current"}
           }
         }
         Component {
@@ -610,12 +601,12 @@ Plecs {
           }
           Parameter {
             Variable      "Before"
-            Value         "0.30"
+            Value         "0.5"
             Show          off
           }
           Parameter {
             Variable      "After"
-            Value         "0.30"
+            Value         "0.50"
             Show          off
           }
           Parameter {
