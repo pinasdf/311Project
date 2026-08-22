@@ -1,6 +1,6 @@
 LTspice 24.1.9 for Windows
 Circuit: C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\311Project\Charger\Simulations\Charger.net
-Start Time: Wed Aug 19 10:15:21 2026
+Start Time: Thu Aug 20 10:50:26 2026
 solver = Alternate
 Maximum thread count: 22
 tnom = 27
@@ -17,7 +17,7 @@ vernier = 0.125
 vernier = 0.0625
 vernier = 0.03125
 vernier = 0.015625
-Gmin = 1.64556
+Gmin = 2.08899
 vernier = 0.0078125
 vernier = 0.00390625
 vernier = 0.00195312
@@ -33,7 +33,7 @@ Source Step = 63.6364%
 Source Step = 93.9394%
 Source stepping succeeded in finding the operating point.
 
-Total elapsed time: 1.501 seconds.
+Total elapsed time: 1.816 seconds.
 
 Files loaded:
 C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\311Project\Charger\Simulations\Charger.net
