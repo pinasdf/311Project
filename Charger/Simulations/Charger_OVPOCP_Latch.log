@@ -1,6 +1,6 @@
 LTspice 24.1.9 for Windows
 Circuit: C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\311Project\Charger\Simulations\Charger_OVPOCP_Latch.net
-Start Time: Thu Aug 20 09:21:35 2026
+Start Time: Mon Aug 24 10:33:33 2026
 solver = Alternate
 Maximum thread count: 22
 tnom = 27
@@ -25,7 +25,7 @@ V6 Vover_voltage 0 PULSE(0 3 0.01 0 0 0.1 0.5)
 Direct Newton iteration for .op point succeeded.
 
 Simulation stopped by user.
-Total elapsed time: 10.474 seconds.
+Total elapsed time: 8.763 seconds.
 
 Files loaded:
 C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\311Project\Charger\Simulations\Charger_OVPOCP_Latch.net
