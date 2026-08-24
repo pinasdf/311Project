@@ -71,7 +71,7 @@ Plecs {
   InvalidNetlistFunctionEvaluationMsg "1"
   IncompatibleInitialConditionMsg "2"
   Schematic {
-    Location      [692, 67; 2077, 894]
+    Location      [535, 67; 1920, 894]
     ZoomFactor    1
     SliderPosition [0, 0]
     ShowBrowser   off
@@ -6635,7 +6635,6 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition none
-      CommentOut    DisabledOpenCircuit
       Frame         [-110, -80; 110, 80]
       SampleTime    "-1"
       CodeGenDiscretizationMethod "2"
@@ -6645,9 +6644,9 @@ Plecs {
       MaskIconOpaque off
       MaskIconRotates on
       Schematic {
-        Location      [0, 114; 1924, 941]
+        Location      [0, 24; 1920, 990]
         ZoomFactor    1.33333
-        SliderPosition [0, -1]
+        SliderPosition [0, 0]
         ShowBrowser   off
         BrowserWidth  100
         Component {
@@ -6660,7 +6659,7 @@ Plecs {
           LabelPosition north
           Parameter {
             Variable      "L"
-            Value         "100e-6"
+            Value         "43e-6"
             Show          on
           }
           Parameter {
@@ -6679,7 +6678,7 @@ Plecs {
           LabelPosition west
           Parameter {
             Variable      "C"
-            Value         "100e-6"
+            Value         "56e-6"
             Show          on
           }
           Parameter {
@@ -6698,7 +6697,7 @@ Plecs {
           LabelPosition west
           Parameter {
             Variable      "R"
-            Value         "5"
+            Value         "50"
             Show          on
           }
         }
@@ -6712,7 +6711,7 @@ Plecs {
           LabelPosition east
           Parameter {
             Variable      "V"
-            Value         "2.5"
+            Value         "3.5"
             Show          on
           }
         }
@@ -6725,16 +6724,18 @@ Plecs {
           Flipped       off
           LabelPosition south
           Frame         [-15, -25; 15, 25]
-          Location      [209, 70; 1058, 951]
-          State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
-"wBvAG0AQQByAGUAYQAAAAAA/////wAAAKgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
-"AA/////wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAANRAAA"
-"AffwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAA1EAAABEAP///wAAA1EAAALP"
+          Location      [0, 24; 1920, 1064]
+          State         "AAAA/wAAAAD9AAAAAgAAAAEAAAC0AAAC8/wCAAAAA/sAAAAQAFoAb"
+"wBvAG0AQQByAGUAYQAAAAAA/////wAAADAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
+"A0AAAC8wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAeAAAA"
+"A9fwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAB4AAAABEAP///wAAB4AAAAL2"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
-          SavedViews    "AAAAAgAAAAA="
-          HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":179,\"Labels\""
-":[\"Delta\",\"Mean\",\"RMS\"],\"VisualIdxs\":[3,8,9]}"
+          SavedViews    "AAAAAgAAAAEAAAAYAFMAYQB2AGUAZAAgAHYAaQBlAHcAIAAxAAAAA"
+"AAAAAA/uZmZmZmZmgAAAAQAf/gAAAAAAAB/+AAAAAAAAAB/+AAAAAAAAH/4AAAAAAAAAH/4AAAAAA"
+"AAf/gAAAAAAAAAf/gAAAAAAAB/+AAAAAAAAAE/tFfN+J8T/z+2XTxo6Rq8AA=="
+          HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":185,\"Labels"
+"\":[\"Delta\",\"Mean\",\"RMS\"],\"VisualIdxs\":[3,8,9]}"
           PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 "QAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
@@ -6896,7 +6897,7 @@ Plecs {
           LabelPosition east
           Parameter {
             Variable      "R"
-            Value         "100e-3"
+            Value         "0.47"
             Show          on
           }
         }
@@ -6973,7 +6974,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "Vf"
-            Value         "0.5"
+            Value         "0.4"
             Show          off
           }
           Parameter {
@@ -7053,7 +7054,7 @@ Plecs {
           Type          Constant
           Name          "Constant"
           Show          on
-          Position      [695, 345]
+          Position      [720, 345]
           Direction     right
           Flipped       on
           LabelPosition south
@@ -7107,15 +7108,15 @@ Plecs {
           Flipped       off
           LabelPosition south
           Frame         [-15, -20; 15, 20]
-          Location      [22, 66; 663, 682]
+          Location      [0, 24; 1920, 1039]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAAIAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
-"AA/////wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAKBAAA"
-"Ab/wBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAAoEAAABEAP///wAAAoEAAAHU"
+"AA/////wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAeAAAA"
+"As/wBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAB4AAAABEAP///wAAB4AAAAMf"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
-          HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":367,\"Labels\""
+          HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":390,\"Labels\""
 ":[],\"VisualIdxs\":[]}"
           PlotPalettes  "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
@@ -7266,12 +7267,12 @@ Plecs {
           }
           Parameter {
             Variable      "kp"
-            Value         "0.1"
+            Value         "2.13"
             Show          off
           }
           Parameter {
             Variable      "ki"
-            Value         "200"
+            Value         "1000"
             Show          off
           }
           Parameter {
@@ -7436,7 +7437,7 @@ Plecs {
             Direction     right
           }
           Schematic {
-            Location      [960, 41; 2107, 651]
+            Location      [630, 308; 1777, 917]
             ZoomFactor    1
             SliderPosition [0, 0]
             ShowBrowser   off
@@ -7807,7 +7808,7 @@ Plecs {
               LabelPosition east
               Parameter {
                 Variable      "R"
-                Value         "7.5e3"
+                Value         "18e3"
                 Show          on
               }
             }
@@ -7821,7 +7822,7 @@ Plecs {
               LabelPosition west
               Parameter {
                 Variable      "C"
-                Value         "2.2e-9"
+                Value         "1e-9"
                 Show          on
               }
               Parameter {
@@ -8625,13 +8626,6 @@ Plecs {
         }
         Connection {
           Type          Signal
-          SrcComponent  "Constant"
-          SrcTerminal   1
-          DstComponent  "Sum"
-          DstTerminal   2
-        }
-        Connection {
-          Type          Signal
           SrcComponent  "VoutM"
           SrcTerminal   1
           Points        [625, 400]
@@ -8684,6 +8678,13 @@ Plecs {
           DstComponent  "UC3843 Spice"
           DstTerminal   3
         }
+        Connection {
+          Type          Signal
+          SrcComponent  "Constant"
+          SrcTerminal   1
+          DstComponent  "Sum"
+          DstTerminal   2
+        }
       }
     }
     Component {
@@ -8694,6 +8695,7 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition none
+      CommentOut    DisabledOpenCircuit
       Frame         [-110, -80; 110, 80]
       SampleTime    "-1"
       CodeGenDiscretizationMethod "2"
@@ -8703,9 +8705,9 @@ Plecs {
       MaskIconOpaque off
       MaskIconRotates on
       Schematic {
-        Location      [0, 23; 1920, 989]
+        Location      [0, 24; 1920, 990]
         ZoomFactor    1.52582
-        SliderPosition [416, 0]
+        SliderPosition [54, 0]
         ShowBrowser   off
         BrowserWidth  100
         Component {
