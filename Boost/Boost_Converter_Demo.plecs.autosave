@@ -8785,11 +8785,11 @@ Plecs {
           Flipped       off
           LabelPosition south
           Frame         [-15, -25; 15, 25]
-          Location      [315, 148; 1164, 952]
+          Location      [315, 148; 1164, 1015]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAANRAAA"
-"A9fwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAA1EAAABEAP///wAAA1EAAAIK"
+"A9fwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAA1EAAABEAP///wAAA1EAAAJJ"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
@@ -9331,7 +9331,7 @@ Plecs {
           }
           Parameter {
             Variable      "ki"
-            Value         "1000"
+            Value         "2000"
             Show          off
           }
           Parameter {
@@ -10656,7 +10656,7 @@ Plecs {
           LabelPosition north
           Parameter {
             Variable      "C"
-            Value         "47e-12"
+            Value         "1591e-12"
             Show          on
           }
           Parameter {
@@ -10675,7 +10675,7 @@ Plecs {
           LabelPosition west
           Parameter {
             Variable      "C"
-            Value         "47e-12"
+            Value         "1591e-12"
             Show          on
           }
           Parameter {
