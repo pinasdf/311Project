@@ -137,7 +137,7 @@ Plecs {
       Type          RelationalOperator
       Name          "Over_Current \nComparator"
       Show          on
-      Position      [575, 310]
+      Position      [685, 310]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -151,7 +151,7 @@ Plecs {
       Type          Constant
       Name          "Over-Current Trip \nReference"
       Show          on
-      Position      [470, 340]
+      Position      [580, 340]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -171,7 +171,7 @@ Plecs {
       Type          RelationalOperator
       Name          "Over-Voltage \nComparator"
       Show          on
-      Position      [575, 455]
+      Position      [685, 455]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -185,7 +185,7 @@ Plecs {
       Type          Constant
       Name          "Over-Voltage Trip \nReference"
       Show          on
-      Position      [470, 490]
+      Position      [580, 490]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -205,7 +205,7 @@ Plecs {
       Type          LogicalOperator
       Name          "Logical\nOperator3"
       Show          on
-      Position      [695, 380]
+      Position      [805, 380]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -224,7 +224,7 @@ Plecs {
       Type          LogicalOperator
       Name          "Logical\nOperator4"
       Show          on
-      Position      [785, 380]
+      Position      [895, 380]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -243,7 +243,7 @@ Plecs {
       Type          Scope
       Name          "Scope"
       Show          on
-      Position      [885, 240]
+      Position      [1300, 235]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -256,7 +256,7 @@ Plecs {
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":155,\"Labels\":[],"
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":235,\"Labels\":[],"
 "\"VisualIdxs\":[]}"
       PlotPalettes  "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
@@ -305,7 +305,7 @@ Plecs {
         BaselineValue 0
       }
       Axis {
-        Name          "Latch Reset"
+        Name          "S (Latch Input)"
         AutoScale     1
         MinValue      0
         MaxValue      1
@@ -316,7 +316,7 @@ Plecs {
         BaselineValue 0
       }
       Axis {
-        Name          "Latch Input"
+        Name          "R"
         AutoScale     1
         MinValue      0
         MaxValue      1
@@ -413,7 +413,7 @@ Plecs {
       Type          PulseGenerator
       Name          "Simulated Current"
       Show          on
-      Position      [470, 280]
+      Position      [580, 260]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -452,7 +452,7 @@ Plecs {
       Type          PulseGenerator
       Name          "Simulated Voltage"
       Show          on
-      Position      [470, 425]
+      Position      [580, 410]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -530,7 +530,7 @@ Plecs {
       Type          Goto
       Name          "Goto"
       Show          off
-      Position      [565, 280]
+      Position      [685, 260]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -565,13 +565,13 @@ Plecs {
       Type          From
       Name          "From"
       Show          off
-      Position      [810, 200]
+      Position      [1225, 195]
       Direction     right
       Flipped       off
       LabelPosition south
       Parameter {
         Variable      "Tag"
-        Value         "tag"
+        Value         "Simulated Current"
         Show          off
       }
       Parameter {
@@ -596,11 +596,291 @@ Plecs {
         Show          off
       }
     }
+    Component {
+      Type          Goto
+      Name          "Goto1"
+      Show          off
+      Position      [665, 410]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "Simulated Voltage"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From1"
+      Show          off
+      Position      [1225, 215]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "Simulated Voltage"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Goto
+      Name          "Goto2"
+      Show          off
+      Position      [1190, 360]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "MOSFET Control Signal"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From2"
+      Show          off
+      Position      [1225, 235]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "MOSFET Control Signal"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Goto
+      Name          "Goto3"
+      Show          off
+      Position      [980, 315]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "S (Latch Input)"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From3"
+      Show          off
+      Position      [1225, 255]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "S (Latch Input)"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From4"
+      Show          off
+      Position      [1225, 275]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "R"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
+    }
+    Component {
+      Type          Goto
+      Name          "Goto4"
+      Show          off
+      Position      [1080, 530]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "R"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "CustomMessage"
+        Value         ""
+        Show          off
+        Evaluate      on
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
+    }
     Connection {
       Type          Signal
       SrcComponent  "Over-Current Trip \nReference"
       SrcTerminal   1
-      Points        [530, 340; 530, 315]
+      Points        [640, 340; 640, 315]
       DstComponent  "Over_Current \nComparator"
       DstTerminal   2
     }
@@ -608,7 +888,7 @@ Plecs {
       Type          Signal
       SrcComponent  "Over-Voltage Trip \nReference"
       SrcTerminal   1
-      Points        [530, 490; 530, 460]
+      Points        [640, 490; 640, 460]
       DstComponent  "Over-Voltage \nComparator"
       DstTerminal   2
     }
@@ -636,27 +916,11 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "Logical\nOperator1"
-      SrcTerminal   1
-      Points        [1155, 360]
-      Branch {
-        Points        [1155, 430; 1035, 430; 1035, 450]
-        DstComponent  "Logical\nOperator2"
-        DstTerminal   2
-      }
-      Branch {
-        Points        [1155, 320; 825, 320; 825, 240]
-        DstComponent  "Scope"
-        DstTerminal   3
-      }
-    }
-    Connection {
-      Type          Signal
       SrcComponent  "Simulated Current"
       SrcTerminal   1
-      Points        [530, 280]
+      Points        [640, 260]
       Branch {
-        Points        [530, 305]
+        Points        [640, 305]
         DstComponent  "Over_Current \nComparator"
         DstTerminal   1
       }
@@ -667,25 +931,9 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "Simulated Voltage"
-      SrcTerminal   1
-      Points        [515, 425]
-      Branch {
-        Points        [530, 425; 530, 450]
-        DstComponent  "Over-Voltage \nComparator"
-        DstTerminal   1
-      }
-      Branch {
-        Points        [515, 390; 410, 390; 410, 230]
-        DstComponent  "Scope"
-        DstTerminal   2
-      }
-    }
-    Connection {
-      Type          Signal
       SrcComponent  "Over-Voltage \nComparator"
       SrcTerminal   3
-      Points        [650, 455; 650, 385]
+      Points        [760, 455; 760, 385]
       DstComponent  "Logical\nOperator3"
       DstTerminal   3
     }
@@ -693,33 +941,9 @@ Plecs {
       Type          Signal
       SrcComponent  "Over_Current \nComparator"
       SrcTerminal   3
-      Points        [650, 310; 650, 375]
+      Points        [760, 310; 760, 375]
       DstComponent  "Logical\nOperator3"
       DstTerminal   2
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Logical\nOperator4"
-      SrcTerminal   1
-      Points        [850, 380]
-      Branch {
-        Points        [950, 380]
-        Branch {
-          Points        [950, 355]
-          DstComponent  "Logical\nOperator1"
-          DstTerminal   2
-        }
-        Branch {
-          Points        [950, 525]
-          DstComponent  "Forbidden State \nProtection NAND"
-          DstTerminal   2
-        }
-      }
-      Branch {
-        Points        [850, 260]
-        DstComponent  "Scope"
-        DstTerminal   5
-      }
     }
     Connection {
       Type          Signal
@@ -730,33 +954,116 @@ Plecs {
     }
     Connection {
       Type          Signal
+      SrcComponent  "From"
+      SrcTerminal   1
+      Points        [1255, 195; 1255, 215]
+      DstComponent  "Scope"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Simulated Voltage"
+      SrcTerminal   1
+      Points        [640, 410]
+      Branch {
+        Points        [640, 450]
+        DstComponent  "Over-Voltage \nComparator"
+        DstTerminal   1
+      }
+      Branch {
+        DstComponent  "Goto1"
+        DstTerminal   1
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From1"
+      SrcTerminal   1
+      Points        [1250, 215; 1250, 225]
+      DstComponent  "Scope"
+      DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Logical\nOperator1"
+      SrcTerminal   1
+      Points        [1155, 360]
+      Branch {
+        Points        [1155, 430; 1035, 430; 1035, 450]
+        DstComponent  "Logical\nOperator2"
+        DstTerminal   2
+      }
+      Branch {
+        DstComponent  "Goto2"
+        DstTerminal   1
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From2"
+      SrcTerminal   1
+      DstComponent  "Scope"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Logical\nOperator4"
+      SrcTerminal   1
+      Points        [950, 380]
+      Branch {
+        Points        [950, 355]
+        Branch {
+          DstComponent  "Logical\nOperator1"
+          DstTerminal   2
+        }
+        Branch {
+          Points        [950, 315]
+          DstComponent  "Goto3"
+          DstTerminal   1
+        }
+      }
+      Branch {
+        Points        [950, 525]
+        DstComponent  "Forbidden State \nProtection NAND"
+        DstTerminal   2
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From3"
+      SrcTerminal   1
+      Points        [1250, 255; 1250, 245]
+      DstComponent  "Scope"
+      DstTerminal   4
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From4"
+      SrcTerminal   1
+      Points        [1255, 275; 1255, 255]
+      DstComponent  "Scope"
+      DstTerminal   5
+    }
+    Connection {
+      Type          Signal
       SrcComponent  "Forbidden State \nProtection NAND"
       SrcTerminal   1
-      Points        [1045, 530; 1045, 480]
+      Points        [1045, 530]
       Branch {
         Points        [1045, 460]
         DstComponent  "Logical\nOperator2"
         DstTerminal   3
       }
       Branch {
-        Points        [840, 480; 840, 250]
-        DstComponent  "Scope"
-        DstTerminal   4
+        DstComponent  "Goto4"
+        DstTerminal   1
       }
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "From"
-      SrcTerminal   1
-      Points        [840, 200; 840, 220]
-      DstComponent  "Scope"
-      DstTerminal   1
     }
     Annotation {
       Name          "<html><body>\n<p align=\"center\">OR and Invert the compa"
 "ritor signal </p>\n<p align=\"center\">as the NAND latch is active low</p>\n<"
 "p> </p></body></html>"
-      Position      [745, 350]
+      Position      [855, 350]
     } 
   }
 }
