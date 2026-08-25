@@ -1,6 +1,6 @@
 LTspice 24.1.9 for Windows
 Circuit: C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\311Project\Charger\Simulations\Charger.net
-Start Time: Thu Aug 20 10:50:26 2026
+Start Time: Tue Aug 25 13:57:48 2026
 solver = Alternate
 Maximum thread count: 22
 tnom = 27
@@ -9,18 +9,20 @@ method = trap
 Early termination of direct N-R iteration.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
-Gmin = 10
+Increasing initial diagonal Gmin to 100
+Gmin = 100
 vernier = 0.5
-Gmin = 1.86414
+Gmin = 18.6414
 vernier = 0.25
 vernier = 0.125
 vernier = 0.0625
 vernier = 0.03125
+Gmin = 19.4331
 vernier = 0.015625
-Gmin = 2.08899
 vernier = 0.0078125
 vernier = 0.00390625
 vernier = 0.00195312
+Gmin = 19.5276
 vernier = 0.000976562
 vernier = 0.000488281
 Gmin = 0
@@ -33,7 +35,7 @@ Source Step = 63.6364%
 Source Step = 93.9394%
 Source stepping succeeded in finding the operating point.
 
-Total elapsed time: 1.816 seconds.
+Total elapsed time: 1.508 seconds.
 
 Files loaded:
 C:\Users\jmstr\OneDrive - The University of Auckland\University\Year 3\ELECTENG 311\311Project\Charger\Simulations\Charger.net
