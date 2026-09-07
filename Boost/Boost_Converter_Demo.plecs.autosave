@@ -8705,7 +8705,7 @@ Plecs {
       MaskIconOpaque off
       MaskIconRotates on
       Schematic {
-        Location      [3, 91; 1923, 1006]
+        Location      [12, 96; 1932, 1011]
         ZoomFactor    1.01814
         SliderPosition [-1, 13]
         ShowBrowser   off
@@ -8785,11 +8785,11 @@ Plecs {
           Flipped       off
           LabelPosition south
           Frame         [-15, -25; 15, 25]
-          Location      [497, 50; 1346, 1075]
+          Location      [497, 40; 1346, 1080]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAADAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAANRAAA"
-"A9fwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAA1EAAABEAP///wAAA1EAAALn"
+"A9fwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAA1EAAABEAP///wAAA1EAAAL2"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
@@ -10628,7 +10628,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "R"
-            Value         "1000"
+            Value         "100"
             Show          on
           }
         }
@@ -10642,7 +10642,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "R"
-            Value         "1000"
+            Value         "100"
             Show          on
           }
         }
@@ -10656,7 +10656,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "R"
-            Value         "1000"
+            Value         "100"
             Show          on
           }
         }
@@ -10670,7 +10670,7 @@ Plecs {
           LabelPosition east
           Parameter {
             Variable      "R"
-            Value         "1000"
+            Value         "100"
             Show          on
           }
         }
@@ -11110,7 +11110,7 @@ Plecs {
           LabelPosition north
           Parameter {
             Variable      "C"
-            Value         "10e-9"
+            Value         "68e-12"
             Show          on
           }
           Parameter {
@@ -11129,7 +11129,7 @@ Plecs {
           LabelPosition west
           Parameter {
             Variable      "R"
-            Value         "2200"
+            Value         "4700"
             Show          on
           }
         }
@@ -11390,7 +11390,7 @@ Plecs {
           LabelPosition west
           Parameter {
             Variable      "R"
-            Value         "22000"
+            Value         "1000"
             Show          on
           }
         }
