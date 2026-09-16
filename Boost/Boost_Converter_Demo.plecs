@@ -8705,7 +8705,7 @@ Plecs {
       MaskIconOpaque off
       MaskIconRotates on
       Schematic {
-        Location      [3, 91; 1923, 1006]
+        Location      [0, 48; 1920, 963]
         ZoomFactor    1.01814
         SliderPosition [-1, 13]
         ShowBrowser   off
@@ -8785,11 +8785,11 @@ Plecs {
           Flipped       off
           LabelPosition south
           Frame         [-15, -25; 15, 25]
-          Location      [497, 50; 1346, 1075]
+          Location      [0, 52; 1920, 1089]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
-"wBvAG0AQQByAGUAYQAAAAAA/////wAAADAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
-"AA/////wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAANRAAA"
-"A9fwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAA1EAAABEAP///wAAA1EAAALn"
+"wBvAG0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
+"AA/////wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAeAAAA"
+"A9fwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAB4AAAABEAP///wAAB4AAAALz"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
@@ -8912,6 +8912,11 @@ Plecs {
             Path          "Closed-loop final schematic"
             Signals       {"Device gate input"}
           }
+          Probe {
+            Component     "R2"
+            Path          "Closed-loop final schematic"
+            Signals       {"Resistor voltage", "Resistor current"}
+          }
         }
         Component {
           Type          PlecsProbe
@@ -8956,7 +8961,7 @@ Plecs {
           LabelPosition east
           Parameter {
             Variable      "R"
-            Value         "0.46685"
+            Value         "0.046685"
             Show          on
           }
         }
@@ -9326,12 +9331,12 @@ Plecs {
           }
           Parameter {
             Variable      "kp"
-            Value         "2.13"
+            Value         "0.5"
             Show          off
           }
           Parameter {
             Variable      "ki"
-            Value         "2000"
+            Value         "500"
             Show          off
           }
           Parameter {
@@ -9501,7 +9506,7 @@ Plecs {
             Direction     left
           }
           Schematic {
-            Location      [254, 392; 1401, 1002]
+            Location      [611, 190; 1758, 800]
             ZoomFactor    1
             SliderPosition [0, 0]
             ShowBrowser   off
@@ -10628,7 +10633,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "R"
-            Value         "1000"
+            Value         "667"
             Show          on
           }
         }
@@ -10642,7 +10647,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "R"
-            Value         "1000"
+            Value         "667"
             Show          on
           }
         }
@@ -10656,7 +10661,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "R"
-            Value         "1000"
+            Value         "5000"
             Show          on
           }
         }
@@ -10670,7 +10675,7 @@ Plecs {
           LabelPosition east
           Parameter {
             Variable      "R"
-            Value         "1000"
+            Value         "5000"
             Show          on
           }
         }
@@ -11110,7 +11115,7 @@ Plecs {
           LabelPosition north
           Parameter {
             Variable      "C"
-            Value         "10e-9"
+            Value         "68e-12"
             Show          on
           }
           Parameter {
@@ -11129,7 +11134,7 @@ Plecs {
           LabelPosition west
           Parameter {
             Variable      "R"
-            Value         "2200"
+            Value         "4700"
             Show          on
           }
         }
@@ -11390,7 +11395,7 @@ Plecs {
           LabelPosition west
           Parameter {
             Variable      "R"
-            Value         "22000"
+            Value         "1000"
             Show          on
           }
         }
