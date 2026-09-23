@@ -9462,8 +9462,13 @@ Plecs {
             Position      [-55, -35]
             Direction     left
           }
+          Terminal {
+            Type          Input
+            Position      [-55, -25]
+            Direction     left
+          }
           Schematic {
-            Location      [659, 154; 1806, 683]
+            Location      [431, 244; 1578, 773]
             ZoomFactor    1.14437
             SliderPosition [0, 0]
             ShowBrowser   off
@@ -10058,7 +10063,7 @@ Plecs {
               Type          Resistor
               Name          "R14"
               Show          on
-              Position      [445, 110]
+              Position      [475, 110]
               Direction     up
               Flipped       on
               LabelPosition east
@@ -10072,7 +10077,7 @@ Plecs {
               Type          Resistor
               Name          "R16"
               Show          on
-              Position      [520, 140]
+              Position      [555, 140]
               Direction     left
               Flipped       on
               LabelPosition north
@@ -10397,6 +10402,141 @@ Plecs {
               Flipped       off
               LabelPosition east
             }
+            Component {
+              Type          Scope
+              Name          "Scope"
+              Show          on
+              Position      [735, 35]
+              Direction     up
+              Flipped       off
+              LabelPosition south
+              Frame         [-15, -20; 15, 20]
+              Location      [0, 24; 1920, 1057]
+              State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQA"
+"FoAbwBvAG0AQQByAGUAYQAAAAAA/////wAAAIAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcw"
+"AAAAAA/////wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAA"
+"AAAAAAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAB4AA"
+"AAPqAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP///"
+"/8AAAAAAAAAAA=="
+              SavedViews    "AAAAAgAAAAA="
+              HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":184,\"Labe"
+"ls\":[],\"VisualIdxs\":[]}"
+              PlotPalettes  "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAAAAAA=="
+              Axes          "3"
+              TimeRange     "0"
+              ScrollingMode "1"
+              SingleTimeAxis "1"
+              Open          "0"
+              Ts            "-1"
+              SampleLimit   "0"
+              XAxisLabel    "Time / s"
+              ShowLegend    "1"
+              Axis {
+                Name          ""
+                AutoScale     1
+                MinValue      0
+                MaxValue      1
+                Signals       {}
+                SignalTypes   [ ]
+                Untangle      0
+                KeepBaseline  off
+                BaselineValue 0
+              }
+              Axis {
+                Name          ""
+                AutoScale     1
+                MinValue      0
+                MaxValue      1
+                Signals       {}
+                SignalTypes   [ ]
+                Untangle      0
+                KeepBaseline  off
+                BaselineValue 0
+              }
+              Axis {
+                Name          ""
+                AutoScale     1
+                MinValue      0
+                MaxValue      1
+                Signals       {}
+                SignalTypes   [ ]
+                Untangle      0
+                KeepBaseline  off
+                BaselineValue 0
+              }
+              Fourier {
+                SingleXAxis       on
+                AxisLabel         "Frequency / Hz"
+                Scaling           0
+                PhaseDisplay      0
+                ShowFourierLegend off
+                Axis {
+                  Name          ""
+                  AutoScale     1
+                  MinValue      0
+                  MaxValue      1
+                  Signals       {}
+                  Untangle      0
+                  KeepBaseline  off
+                  BaselineValue 0
+                }
+                Axis {
+                  Name          ""
+                  AutoScale     1
+                  MinValue      0
+                  MaxValue      1
+                  Signals       {}
+                  Untangle      0
+                  KeepBaseline  off
+                  BaselineValue 0
+                }
+                Axis {
+                  Name          ""
+                  AutoScale     1
+                  MinValue      0
+                  MaxValue      1
+                  Signals       {}
+                  Untangle      0
+                  KeepBaseline  off
+                  BaselineValue 0
+                }
+              }
+            }
+            Component {
+              Type          PlecsProbe
+              Name          "Probe"
+              Show          on
+              Position      [335, 15]
+              Direction     right
+              Flipped       off
+              LabelPosition south
+              Probe {
+                Component     "V"
+                Path          "Closed-loop final schematic/UC3843 Spice"
+                Signals       {}
+              }
+            }
+            Component {
+              Type          Input
+              Name          "In1"
+              Show          on
+              Position      [660, 45]
+              Direction     right
+              Flipped       off
+              LabelPosition south
+              Parameter {
+                Variable      "Index"
+                Value         "5"
+                Show          on
+              }
+              Parameter {
+                Variable      "Width"
+                Value         "-1"
+                Show          off
+              }
+            }
             Connection {
               Type          Wire
               SrcComponent  "Label4"
@@ -10495,7 +10635,7 @@ Plecs {
               Type          Wire
               SrcComponent  "R14"
               SrcTerminal   1
-              Points        [445, 140]
+              Points        [475, 140]
               Branch {
                 DstComponent  "Netlist1"
                 DstTerminal   2
@@ -10593,27 +10733,6 @@ Plecs {
             }
             Connection {
               Type          Wire
-              SrcComponent  "R14"
-              SrcTerminal   2
-              Points        [445, 80]
-              Branch {
-                DstComponent  "Netlist1"
-                DstTerminal   1
-              }
-              Branch {
-                Points        [445, 70]
-                DstComponent  "V"
-                DstTerminal   1
-              }
-            }
-            Connection {
-              Type          Wire
-              SrcComponent  "V"
-              SrcTerminal   2
-              Points        [630, 70]
-            }
-            Connection {
-              Type          Wire
               SrcComponent  "V2"
               SrcTerminal   1
               Points        [890, 140]
@@ -10640,6 +10759,42 @@ Plecs {
                 DstComponent  "C1"
                 DstTerminal   1
               }
+            }
+            Connection {
+              Type          Wire
+              SrcComponent  "V"
+              SrcTerminal   2
+              Points        [635, 70]
+            }
+            Connection {
+              Type          Wire
+              SrcComponent  "R14"
+              SrcTerminal   2
+              Points        [475, 80]
+              Branch {
+                Points        [475, 70]
+                DstComponent  "V"
+                DstTerminal   1
+              }
+              Branch {
+                DstComponent  "Netlist1"
+                DstTerminal   1
+              }
+            }
+            Connection {
+              Type          Signal
+              SrcComponent  "Probe"
+              SrcTerminal   1
+              Points        [660, 15; 660, 35]
+              DstComponent  "Scope"
+              DstTerminal   2
+            }
+            Connection {
+              Type          Signal
+              SrcComponent  "In1"
+              SrcTerminal   1
+              DstComponent  "Scope"
+              DstTerminal   3
             }
           }
         }
@@ -10919,7 +11074,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "R"
-            Value         "4700"
+            Value         "47"
             Show          on
           }
         }
@@ -11310,7 +11465,7 @@ Plecs {
           LabelPosition west
           Parameter {
             Variable      "C"
-            Value         "0.1e-6"
+            Value         "10e-6"
             Show          on
           }
           Parameter {
@@ -11343,7 +11498,7 @@ Plecs {
           LabelPosition west
           Parameter {
             Variable      "C"
-            Value         "0.1e-6"
+            Value         "10e-6"
             Show          on
           }
           Parameter {
@@ -11431,20 +11586,21 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition south
-          Frame         [-15, -15; 15, 15]
+          Frame         [-15, -20; 15, 20]
           Location      [0, 24; 1920, 1064]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
-"wBvAG0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
+"wBvAG0AQQByAGUAYQAAAAAA/////wAAAIAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAAAAAA"
 "AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAAB4AAAAPx"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
-          HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":159,\"Labels\""
+          HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":184,\"Labels\""
 ":[],\"VisualIdxs\":[]}"
           PlotPalettes  "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
-          Axes          "2"
+"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"AAAA=="
+          Axes          "3"
           TimeRange     "0"
           ScrollingMode "1"
           SingleTimeAxis "1"
@@ -11475,12 +11631,33 @@ Plecs {
             KeepBaseline  off
             BaselineValue 0
           }
+          Axis {
+            Name          ""
+            AutoScale     1
+            MinValue      0
+            MaxValue      1
+            Signals       {}
+            SignalTypes   [ ]
+            Untangle      0
+            KeepBaseline  off
+            BaselineValue 0
+          }
           Fourier {
             SingleXAxis       on
             AxisLabel         "Frequency / Hz"
             Scaling           0
             PhaseDisplay      0
             ShowFourierLegend off
+            Axis {
+              Name          ""
+              AutoScale     1
+              MinValue      0
+              MaxValue      1
+              Signals       {}
+              Untangle      0
+              KeepBaseline  off
+              BaselineValue 0
+            }
             Axis {
               Name          ""
               AutoScale     1
@@ -11594,6 +11771,34 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition east
+        }
+        Component {
+          Type          PlecsProbe
+          Name          "Probe4"
+          Show          on
+          Position      [160, 490]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Probe {
+            Component     "Vm1"
+            Path          "Closed-loop final schematic"
+            Signals       {"Measured voltage"}
+          }
+        }
+        Component {
+          Type          PlecsProbe
+          Name          "Probe5"
+          Show          on
+          Position      [470, 490]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Probe {
+            Component     "Vm1"
+            Path          "Closed-loop final schematic"
+            Signals       {"Measured voltage"}
+          }
         }
         Connection {
           Type          Wire
@@ -12177,7 +12382,7 @@ Plecs {
           Type          Signal
           SrcComponent  "Probe2"
           SrcTerminal   1
-          Points        [100, 480; 110, 480; 110, 415]
+          Points        [100, 480; 110, 480; 110, 410]
           DstComponent  "Scope2"
           DstTerminal   2
         }
@@ -12216,6 +12421,7 @@ Plecs {
           Type          Signal
           SrcComponent  "Probe3"
           SrcTerminal   1
+          Points        [110, 405; 110, 400]
           DstComponent  "Scope2"
           DstTerminal   1
         }
@@ -12226,6 +12432,22 @@ Plecs {
           Points        [175, 590]
           DstComponent  "V2"
           DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Probe4"
+          SrcTerminal   1
+          Points        [190, 490; 190, 455; 115, 455]
+          DstComponent  "Scope2"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Probe5"
+          SrcTerminal   1
+          Points        [495, 425; 235, 425; 235, 360]
+          DstComponent  "UC3843 Spice"
+          DstTerminal   5
         }
       }
     }
