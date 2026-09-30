@@ -84,7 +84,6 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition none
-      CommentOut    DisabledOpenCircuit
       Frame         [-110, -80; 110, 80]
       SampleTime    "-1"
       CodeGenDiscretizationMethod "2"
@@ -128,7 +127,7 @@ Plecs {
           LabelPosition west
           Parameter {
             Variable      "C"
-            Value         "150e-6"
+            Value         "560e-6"
             Show          on
           }
           Parameter {
@@ -147,7 +146,7 @@ Plecs {
           LabelPosition west
           Parameter {
             Variable      "R"
-            Value         "5"
+            Value         "50"
             Show          on
           }
         }
@@ -161,7 +160,7 @@ Plecs {
           LabelPosition east
           Parameter {
             Variable      "V"
-            Value         "2.5"
+            Value         "3.5"
             Show          on
           }
         }
@@ -174,16 +173,16 @@ Plecs {
           Flipped       off
           LabelPosition south
           Frame         [-15, -25; 15, 25]
-          Location      [243, 82; 1092, 1089]
+          Location      [193, 71; 1042, 1028]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAADAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAANRAAA"
-"BF/wBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAA1EAAABEAP///wAAA1EAAAKz"
+"BbPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAA1EAAABEAP///wAAA1EAAAIs"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
-          HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":185,\"Labels"
-"\":[\"Delta\",\"Mean\",\"RMS\"],\"VisualIdxs\":[3,8,9]}"
+          HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":185,\"Labels\""
+":[\"Delta\",\"Mean\",\"RMS\"],\"VisualIdxs\":[3,8,9]}"
           PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 "QAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
@@ -532,7 +531,7 @@ Plecs {
           LabelPosition east
           Parameter {
             Variable      "R"
-            Value         "5e-3"
+            Value         "80e-3"
             Show          on
           }
         }
@@ -602,12 +601,12 @@ Plecs {
           }
           Parameter {
             Variable      "Before"
-            Value         "0.5"
+            Value         "0.33"
             Show          off
           }
           Parameter {
             Variable      "After"
-            Value         "0.5"
+            Value         "0.33"
             Show          off
           }
           Parameter {
@@ -8696,6 +8695,7 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition none
+      CommentOut    DisabledOpenCircuit
       Frame         [-110, -80; 110, 80]
       SampleTime    "-1"
       CodeGenDiscretizationMethod "2"
@@ -8707,7 +8707,7 @@ Plecs {
       Schematic {
         Location      [0, 87; 1920, 1002]
         ZoomFactor    1.33333
-        SliderPosition [19, 94]
+        SliderPosition [19, 150]
         ShowBrowser   off
         BrowserWidth  100
         Component {
@@ -8787,7 +8787,7 @@ Plecs {
           Frame         [-15, -25; 15, 25]
           Location      [0, 40; 1920, 1080]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
-"wBvAG0AQQByAGUAYQAAAAAA/////wAAADAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
+"wBvAG0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAeAAAA"
 "A9fwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAB4AAAABEAP///wAAB4AAAAL2"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
@@ -10808,7 +10808,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "R"
-            Value         "150"
+            Value         "1500"
             Show          on
           }
         }
@@ -10822,7 +10822,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "R"
-            Value         "150"
+            Value         "1500"
             Show          on
           }
         }
@@ -10836,7 +10836,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "R"
-            Value         "680"
+            Value         "6800"
             Show          on
           }
         }
@@ -10850,7 +10850,7 @@ Plecs {
           LabelPosition east
           Parameter {
             Variable      "R"
-            Value         "680"
+            Value         "6800"
             Show          on
           }
         }
@@ -10965,7 +10965,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "R"
-            Value         "1000"
+            Value         "12000"
             Show          on
           }
         }
@@ -11074,7 +11074,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "R"
-            Value         "47"
+            Value         "47000"
             Show          on
           }
         }
