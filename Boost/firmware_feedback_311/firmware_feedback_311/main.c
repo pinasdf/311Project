@@ -1,18 +1,73 @@
-/*
- * firmware_feedback_311.c
- *
- * Created: 30/09/2026 2:41:20 pm
- * Author : 21eng
- */ 
-
 #include <avr/io.h>
+#include <avr/interrupt.h>
 
+#include "config.h"
+#include "gpio.h"
+#include "pwm.h"
+#include "adc.h"
+#include "sensors.h"
+#include "pi.h"
+#include "protection.h"
+#include "timer.h"
+#include "uart.h"
+
+static pi_t pi;
+
+#if DEBUG_UART_ENABLE
+static void debug_print(float vout)
+{
+	static uint16_t count = 0;
+	if (++count < DEBUG_PRINT_PERIOD_TICKS) return;
+	count = 0;
+
+	uart_print("Vraw=");      uart_print_int((int16_t)adc_voltage_raw());
+	uart_print(" Iraw=");     uart_print_int((int16_t)adc_current_raw());
+	uart_print(" Vout_mV=");  uart_print_int((int16_t)(vout * 1000.0f));
+	uart_print(" overruns="); uart_print_int((int16_t)timer_overruns());
+	uart_print("\r\n");
+}
+#endif
+
+static void control_step(void)
+{
+	adc_update();                        // read both channels and store them
+	float vout    = sensors_vout();
+	float current = sensors_current();
+
+	#if TEST_LOOPBACK
+	(void)current;
+	pwm_set_duty(TEST_DUTY);             // fixed duty for the PWM to ADC loopback test
+	#else
+	protection_check(vout, current);
+
+	if (protection_fault()) {
+		pwm_set_duty(PWM_DUTY_MAX);      // park at the lowest current limit
+		} else {
+		pwm_set_duty(pi_update(&pi, VOUT_TARGET_V, vout));
+	}
+	#endif
+
+	#if DEBUG_UART_ENABLE
+	debug_print(vout);
+	#endif
+}
 
 int main(void)
 {
-    /* Replace with your application code */
-    while (1) 
-    {
-    }
-}
+	gpio_init();
+	uart_init();
+	pwm_init();
+	adc_init();
+	protection_init();
+	pi_init(&pi);
+	timer_init();
 
+	sei();
+
+	while (1) {
+		if (timer_tick_pending()) {
+			timer_tick_clear();
+			control_step();
+		}
+	}
+}
