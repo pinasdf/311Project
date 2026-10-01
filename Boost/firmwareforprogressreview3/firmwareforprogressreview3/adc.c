@@ -64,14 +64,28 @@ static uint16_t adc_convert(void)
 	return ADC;
 }
 
+#if ADC_FAKE_INPUT
+static uint16_t fake_raw(float volts)
+{
+	float r = volts * ADC_COUNTS / ADC_VREF_V;   // volts to ADC code
+	if (r < 0.0f)    r = 0.0f;
+	if (r > 1023.0f) r = 1023.0f;
+	return (uint16_t)r;
+}
+#endif
+
 uint16_t adc_read_raw(uint8_t channel)
 {
-	ADMUX = ADC_REF_BITS | (channel & 0x0F);  // select reference and channel
+	#if ADC_FAKE_INPUT
+	return fake_raw(channel == ADC_CH_VOLTAGE ? ADC_FAKE_VOLTAGE_V : ADC_FAKE_CURRENT_V);
+	#else
+	ADMUX = ADC_REF_BITS | (channel & 0x0F);
 
 	for (uint8_t i = 0; i < ADC_DUMMY_READS; i++) {
-		adc_convert();                        // let the new channel settle
+		adc_convert();
 	}
 	return adc_convert();
+	#endif
 }
 
 // ---- Public functions ----

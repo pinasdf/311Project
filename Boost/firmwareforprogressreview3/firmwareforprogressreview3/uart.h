@@ -6,6 +6,7 @@
 
 #define UART_BAUD   9600UL     // set the Proteus virtual terminal to the same baud rate
 
+
 void uart_init(void);
 void uart_putc(char c);
 void uart_print(const char *s);

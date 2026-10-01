@@ -7,8 +7,8 @@
 
 // Output voltage divider (R22 on top, R24 on the bottom, into MCU_VFB)
 // For the Proteus template the ADC pin reads the RC filter directly, so the ratio is 1.
-#define SENSE_V_RTOP_OHM     10000f       // R22. Keep 0 for the Proteus template
-#define SENSE_V_RBOT_OHM     10000f    // R24
+#define SENSE_V_RTOP_OHM     10000.0f       // R22. Keep 0 for the Proteus template
+#define SENSE_V_RBOT_OHM     10000.0f    // R24
 
 // Current sensing chain
 #define SENSE_I_SHUNT_OHM    0.047f       // R5 (placeholder)

@@ -9,6 +9,7 @@ void uart_init(void)
 	UBRR0L = (uint8_t)ubrr;
 	UCSR0B = (1 << TXEN0);                        // transmit only
 	UCSR0C = (1 << UCSZ01) | (1 << UCSZ00);       // 8 data bits, no parity, 1 stop bit
+	DDRD |= (1 << PORTD1);
 }
 
 void uart_putc(char c)

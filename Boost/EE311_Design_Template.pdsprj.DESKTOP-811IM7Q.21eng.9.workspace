@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<WORKSPACE>
+ <FRAME activeWindow="0">
+  <PLACEMENT>01d9d0cb00030000000000de00000004000006a1000003e4000000df00000031000006a0000003e300000000000000000780000000df00000031000006a0000003e3</PLACEMENT>
+  <WINDOW mode="00050a01" module="ISIS" index="0" type="default"/>
+  <WINDOW mode="00050a01" module="VSMSTUDIO" index="0" type="default">
+   <STATE VALUE="AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAvsAAAAQAFAAcgBvAGoAZQBjAHQAcwEAAAAA/////wAAASwA////+wAAABQAUAByAG8AcABlAHIAdABpAGUAcwAAAAAA/////wAAAI8A////AAAAAwAAAAAAAAAA/AEAAAAB/AAAAAD/////AAAAhgD////6AAAAAAEAAAAD+wAAACAATwB1AHQAcAB1AHQARABvAGMAawBXAGkAZABnAGUAdAEAAAAA/////wAAAIYA////+wAAABAAVABlAHIAbQBpAG4AYQBsAAAAAAD/////AAABzgD////7AAAAIgBCAHIAZQBhAGsAcABvAGkAbgB0AHMAVwBpAG4AZABvAHcAAAAAAP////8AAACGAP///wAAAAAAAAAAAAAAAQAAAAIAAAAIAAAAAvwAAAAA" NAME="EDIT"/>
+   <TERMINAL>
+    <SERIAL DATABITS="8" BAUD="9600" PORT="COM6" PARITY="0" STOPBITS="1"/>
+    <CONSOLE>
+     <ITEM name="AUTOECHO">0</ITEM>
+     <ITEM name="ENCODING">System</ITEM>
+     <ITEM name="HEXMODE">0</ITEM>
+     <ITEM name="LINEMODE">0</ITEM>
+     <ITEM name="XONOFF">0</ITEM>
+    </CONSOLE>
+   </TERMINAL>
+   <PROJECT NAME="ATmega328P" CONFIGURATION="Debug" ACTIVE="true">
+    <PROGRAMMER NAME="AVRDUDE" INTERFACE="Arduino (ATmega328)">
+     <PROPERTY VALUE="COM6" NAME="PORT"/>
+     <PROPERTY VALUE="115200" NAME="PORTCLOCK"/>
+     <PROPERTY VALUE="ArduinoUnoR3.hex" NAME="UPLOADER"/>
+    </PROGRAMMER>
+   </PROJECT>
+   <EDITOR/>
+  </WINDOW>
+ </FRAME>
+ <MODULE name="VSMEDIT">
+  <EDITOR/>
+ </MODULE>
+ <MODULE name="ISIS" lastSheetUid="2">
+  <editor snaprange="176388" metric="0" gridminor="508000" snap="254000" flipped="0" zoom="0" scale="72" xcursor="0" gridmode="2" gridmajor="25400000" orgmode="0" snapidx="2">
+   <centre y="-3544348" x="5842000"/>
+   <origin y="0" x="0"/>
+   <world x2="19050000" y1="-12700000" x1="-19050000" y2="12700000"/>
+  </editor>
+ </MODULE>
+ <MODULE name="ARES" lastSheetUid="2">
+  <editor snaprange="0" metric="0" gridminor="0" snap="0" flipped="0" zoom="10" scale="10" xcursor="0" gridmode="2" gridmajor="0" orgmode="0" snapidx="3">
+   <centre y="0" x="0"/>
+   <origin y="0" x="0"/>
+   <world x2="15240000" y1="-12700000" x1="-15240000" y2="12700000"/>
+  </editor>
+ </MODULE>
+ <MODULE name="VSMDEBUG" lastSheetUid="2">
+  <PWI/>
+ </MODULE>
+</WORKSPACE>

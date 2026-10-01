@@ -63,6 +63,7 @@ int main(void)
 	timer_init();
 
 	sei();
+		uart_print("Hello\r\n");
 
 	while (1) {
 		if (timer_tick_pending()) {
