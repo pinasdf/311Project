@@ -8785,7 +8785,7 @@ Plecs {
           Flipped       off
           LabelPosition south
           Frame         [-15, -25; 15, 25]
-          Location      [0, 40; 1920, 1080]
+          Location      [0, 24; 1920, 1064]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAADAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAeAAAA"
@@ -8793,8 +8793,8 @@ Plecs {
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
-          HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":185,\"Labels"
-"\":[\"Delta\",\"Mean\",\"RMS\"],\"VisualIdxs\":[3,8,9]}"
+          HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":185,\"Labels\""
+":[\"Delta\",\"Mean\",\"RMS\"],\"VisualIdxs\":[3,8,9]}"
           PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 "QAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
@@ -10808,7 +10808,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "R"
-            Value         "680"
+            Value         "180"
             Show          on
           }
         }
@@ -10822,7 +10822,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "R"
-            Value         "680"
+            Value         "180"
             Show          on
           }
         }
@@ -10900,7 +10900,7 @@ Plecs {
           LabelPosition north
           Parameter {
             Variable      "C"
-            Value         "120e-12"
+            Value         "150e-12"
             Show          on
           }
           Parameter {
@@ -10919,7 +10919,7 @@ Plecs {
           LabelPosition west
           Parameter {
             Variable      "C"
-            Value         "120e-12"
+            Value         "150e-12"
             Show          on
           }
           Parameter {
@@ -11074,7 +11074,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "R"
-            Value         "47000"
+            Value         "10000"
             Show          on
           }
         }
@@ -11132,6 +11132,7 @@ Plecs {
           Direction     left
           Flipped       on
           LabelPosition north
+          CommentOut    DisabledOpenCircuit
           Parameter {
             Variable      "C"
             Value         "68e-12"
@@ -11151,6 +11152,7 @@ Plecs {
           Direction     down
           Flipped       off
           LabelPosition west
+          CommentOut    DisabledOpenCircuit
           Parameter {
             Variable      "R"
             Value         "4700"
@@ -11165,6 +11167,7 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition south
+          CommentOut    DisabledOpenCircuit
           Frame         [-20, -20; 20, 20]
           IconDisplayCommands "local IconLib = require('PlecsIconLib')\n"
 "\n"
@@ -11223,6 +11226,7 @@ Plecs {
           Direction     right
           Flipped       on
           LabelPosition north
+          CommentOut    DisabledOpenCircuit
           Parameter {
             Variable      "V"
             Value         "5"
@@ -11255,6 +11259,7 @@ Plecs {
           Direction     right
           Flipped       off
           LabelPosition south
+          CommentOut    DisabledOpenCircuit
           Probe {
             Component     "C2"
             Path          "Closed-loop final schematic/UC3843 Spice"
@@ -11269,6 +11274,7 @@ Plecs {
           Direction     left
           Flipped       on
           LabelPosition south
+          CommentOut    DisabledOpenCircuit
           Parameter {
             Variable      "DiscretizationBehavior"
             Value         "2"
@@ -11288,6 +11294,7 @@ Plecs {
           Direction     right
           Flipped       off
           LabelPosition south
+          CommentOut    DisabledOpenCircuit
         }
         Component {
           Type          Ground
@@ -11306,6 +11313,7 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition east
+          CommentOut    DisabledOpenCircuit
         }
         Component {
           Type          VoltageSource
@@ -11403,9 +11411,10 @@ Plecs {
           Direction     down
           Flipped       off
           LabelPosition west
+          CommentOut    DisabledOpenCircuit
           Parameter {
             Variable      "R"
-            Value         "1000"
+            Value         "1e3"
             Show          on
           }
         }
@@ -11417,6 +11426,7 @@ Plecs {
           Direction     up
           Flipped       on
           LabelPosition west
+          CommentOut    DisabledOpenCircuit
           Parameter {
             Variable      "DiscretizationBehavior"
             Value         "2"
@@ -11436,6 +11446,7 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition west
+          CommentOut    DisabledOpenCircuit
         }
         Component {
           Type          Ground
@@ -11445,6 +11456,7 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition east
+          CommentOut    DisabledOpenCircuit
         }
         Component {
           Type          Ground
@@ -11454,6 +11466,7 @@ Plecs {
           Direction     down
           Flipped       off
           LabelPosition west
+          CommentOut    DisabledOpenCircuit
         }
         Component {
           Type          Capacitor
@@ -11809,16 +11822,16 @@ Plecs {
           Flipped       off
           LabelPosition south
           Frame         [-15, -15; 15, 15]
-          Location      [0, 23; 1920, 1011]
+          Location      [0, 24; 1920, 1064]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAADAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAeAAAA"
-"Ac/wBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAB4AAAABEAP///wAAB4AAAANE"
+"Ac/wBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAB4AAAABEAP///wAAB4AAAAN4"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
-          HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":178,\"Labels"
-"\":[],\"VisualIdxs\":[]}"
+          HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":178,\"Labels\""
+":[],\"VisualIdxs\":[]}"
           PlotPalettes  "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
           Axes          "1"
           TimeRange     "0.0"
@@ -12095,32 +12108,32 @@ Plecs {
         }
         Connection {
           Type          Wire
-          SrcComponent  "Op-Amp"
-          SrcTerminal   3
-          Points        [1100, 680]
+          SrcComponent  "R6"
+          SrcTerminal   1
+          Points        [1100, 525]
           Branch {
-            Points        [1100, 525]
+            Points        [1100, 680]
             Branch {
-              DstComponent  "R6"
-              DstTerminal   1
+              DstComponent  "Op-Amp"
+              DstTerminal   3
             }
             Branch {
-              Points        [1100, 500]
-              DstComponent  "C2"
-              DstTerminal   1
+              Points        [1220, 680]
+              Branch {
+                Points        [1275, 680]
+                DstComponent  "Vi1"
+                DstTerminal   1
+              }
+              Branch {
+                DstComponent  "R19"
+                DstTerminal   1
+              }
             }
           }
           Branch {
-            Points        [1220, 680]
-            Branch {
-              Points        [1275, 680]
-              DstComponent  "Vi1"
-              DstTerminal   1
-            }
-            Branch {
-              DstComponent  "R19"
-              DstTerminal   1
-            }
+            Points        [1100, 500]
+            DstComponent  "C2"
+            DstTerminal   1
           }
         }
         Connection {
