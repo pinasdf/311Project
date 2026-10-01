@@ -12,7 +12,7 @@
 // Test mode for the Proteus template (PWM into RC filter into ADC pin)
 //   1 = hold the PWM at TEST_DUTY, no PI, no protection
 //   0 = normal operation (PI controller and protection)
-#define TEST_LOOPBACK   1
+#define TEST_LOOPBACK   0
 #define TEST_DUTY       0.50f
 
 // Debug printing over the UART (Proteus virtual terminal)
