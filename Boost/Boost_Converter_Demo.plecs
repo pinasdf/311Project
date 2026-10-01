@@ -84,6 +84,7 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition none
+      CommentOut    DisabledOpenCircuit
       Frame         [-110, -80; 110, 80]
       SampleTime    "-1"
       CodeGenDiscretizationMethod "2"
@@ -8695,7 +8696,6 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition none
-      CommentOut    DisabledOpenCircuit
       Frame         [-110, -80; 110, 80]
       SampleTime    "-1"
       CodeGenDiscretizationMethod "2"
@@ -8787,7 +8787,7 @@ Plecs {
           Frame         [-15, -25; 15, 25]
           Location      [0, 40; 1920, 1080]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
-"wBvAG0AQQByAGUAYQAAAAAA/////wAAAFgA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
+"wBvAG0AQQByAGUAYQAAAAAA/////wAAADAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAeAAAA"
 "A9fwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAB4AAAABEAP///wAAB4AAAAL2"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
@@ -9053,7 +9053,7 @@ Plecs {
           LabelPosition east
           Parameter {
             Variable      "R"
-            Value         "5e-3"
+            Value         "80e-3"
             Show          on
           }
         }
@@ -10808,7 +10808,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "R"
-            Value         "1500"
+            Value         "680"
             Show          on
           }
         }
@@ -10822,7 +10822,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "R"
-            Value         "1500"
+            Value         "680"
             Show          on
           }
         }
@@ -10836,7 +10836,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "R"
-            Value         "6800"
+            Value         "1.5e3"
             Show          on
           }
         }
@@ -10850,7 +10850,7 @@ Plecs {
           LabelPosition east
           Parameter {
             Variable      "R"
-            Value         "6800"
+            Value         "1.5e3"
             Show          on
           }
         }
@@ -10900,7 +10900,7 @@ Plecs {
           LabelPosition north
           Parameter {
             Variable      "C"
-            Value         "150e-12"
+            Value         "120e-12"
             Show          on
           }
           Parameter {
@@ -10919,7 +10919,7 @@ Plecs {
           LabelPosition west
           Parameter {
             Variable      "C"
-            Value         "150e-12"
+            Value         "120e-12"
             Show          on
           }
           Parameter {
@@ -11800,6 +11800,83 @@ Plecs {
             Signals       {"Measured voltage"}
           }
         }
+        Component {
+          Type          Scope
+          Name          "Scope3"
+          Show          on
+          Position      [875, 425]
+          Direction     up
+          Flipped       off
+          LabelPosition south
+          Frame         [-15, -15; 15, 15]
+          Location      [0, 23; 1920, 1011]
+          State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
+"wBvAG0AQQByAGUAYQAAAAAA/////wAAADAA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
+"AA/////wAAAGIA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABiAP///wAAAAMAAAeAAAA"
+"Ac/wBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAB4AAAABEAP///wAAB4AAAANE"
+"AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
+"AAAAAAAAA=="
+          SavedViews    "AAAAAgAAAAA="
+          HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":178,\"Labels"
+"\":[],\"VisualIdxs\":[]}"
+          PlotPalettes  "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+          Axes          "1"
+          TimeRange     "0.0"
+          ScrollingMode "1"
+          SingleTimeAxis "1"
+          Open          "0"
+          Ts            "-1"
+          SampleLimit   "0"
+          XAxisLabel    "Time / s"
+          ShowLegend    "1"
+          Axis {
+            Name          ""
+            AutoScale     1
+            MinValue      0
+            MaxValue      1
+            Signals       {}
+            SignalTypes   [ ]
+            Untangle      0
+            KeepBaseline  off
+            BaselineValue 0
+          }
+          Fourier {
+            SingleXAxis       on
+            AxisLabel         "Frequency / Hz"
+            Scaling           0
+            PhaseDisplay      0
+            ShowFourierLegend off
+            Axis {
+              Name          ""
+              AutoScale     1
+              MinValue      0
+              MaxValue      1
+              Signals       {}
+              Untangle      0
+              KeepBaseline  off
+              BaselineValue 0
+            }
+          }
+        }
+        Component {
+          Type          PlecsProbe
+          Name          "Probe6"
+          Show          on
+          Position      [815, 370]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Probe {
+            Component     "Vi"
+            Path          "Closed-loop final schematic"
+            Signals       {"Measured voltage"}
+          }
+          Probe {
+            Component     "Vi1"
+            Path          "Closed-loop final schematic"
+            Signals       {"Measured voltage"}
+          }
+        }
         Connection {
           Type          Wire
           SrcComponent  "R2"
@@ -12448,6 +12525,20 @@ Plecs {
           Points        [495, 425; 235, 425; 235, 360]
           DstComponent  "UC3843 Spice"
           DstTerminal   5
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Vi"
+          SrcTerminal   3
+          Points        [415, 215; 415, 275; 435, 275]
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Probe6"
+          SrcTerminal   1
+          Points        [845, 370]
+          DstComponent  "Scope3"
+          DstTerminal   1
         }
       }
     }
