@@ -6,8 +6,8 @@
 #include "pwm.h"
 
 // ---- Settings you can change (starting guesses, tune in Proteus) ----
-#define PI_KP        0.10f    // duty change per volt of error
-#define PI_KI        5.00f    // duty change per volt of error per second
+#define PI_KP        0.5f    // duty change per volt of error
+#define PI_KI        500.0f    // duty change per volt of error per second
 
 // The UC3843 op amp inverts, so a HIGHER duty means a LOWER peak current.
 // If Vout is too low we need more current, so the duty must go down.

@@ -28,8 +28,8 @@ uint16_t adc_voltage_raw(void);           // averaged code for the voltage chann
 uint16_t adc_current_raw(void);           // averaged code for the current channel
 
 // Fake input mode: skip the real ADC and use these voltages at the pin instead
-#define ADC_FAKE_INPUT      1      // 1 = use the fake values below
-#define ADC_FAKE_VOLTAGE_V  4.0f    // pretend voltage on the voltage channel pin
-#define ADC_FAKE_CURRENT_V  0.5f    // pretend voltage on the current channel pin
+#define ADC_FAKE_INPUT      1    // 1 = use the fake values below
+#define ADC_FAKE_VOLTAGE_V  2.5f    // pretend voltage on the voltage channel pin
+#define ADC_FAKE_CURRENT_V  0    // pretend voltage on the current channel pin
 
 #endif

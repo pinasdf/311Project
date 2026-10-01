@@ -23,25 +23,26 @@ static void debug_print(float vout)
 	uart_print("Vraw=");      uart_print_int((int16_t)adc_voltage_raw());
 	uart_print(" Iraw=");     uart_print_int((int16_t)adc_current_raw());
 	uart_print(" Vout_mV=");  uart_print_int((int16_t)(vout * 1000.0f));
-	uart_print(" overruns="); uart_print_int((int16_t)timer_overruns());
+	uart_print(" OCR0B=");    uart_print_int((int16_t)OCR0B);
+	uart_print(" fault=");    uart_print_int((int16_t)protection_fault());
 	uart_print("\r\n");
 }
 #endif
 
 static void control_step(void)
 {
-	adc_update();                        // read both channels and store them
+	adc_update();
 	float vout    = sensors_vout();
 	float current = sensors_current();
 
 	#if TEST_LOOPBACK
 	(void)current;
-	pwm_set_duty(TEST_DUTY);             // fixed duty for the PWM to ADC loopback test
+	pwm_set_duty(TEST_DUTY);
 	#else
 	protection_check(vout, current);
 
 	if (protection_fault()) {
-		pwm_set_duty(PWM_DUTY_MAX);      // park at the lowest current limit
+		pwm_set_duty(PWM_DUTY_MAX);
 		} else {
 		pwm_set_duty(pi_update(&pi, VOUT_TARGET_V, vout));
 	}
@@ -63,7 +64,6 @@ int main(void)
 	timer_init();
 
 	sei();
-		uart_print("Hello\r\n");
 
 	while (1) {
 		if (timer_tick_pending()) {

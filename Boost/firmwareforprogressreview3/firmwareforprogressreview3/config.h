@@ -17,6 +17,6 @@
 
 // Debug printing over the UART (Proteus virtual terminal)
 #define DEBUG_UART_ENABLE          1
-#define DEBUG_PRINT_PERIOD_TICKS   250    // print once every N loop ticks
+#define DEBUG_PRINT_PERIOD_TICKS   10   // print once every N loop ticks
 
 #endif
