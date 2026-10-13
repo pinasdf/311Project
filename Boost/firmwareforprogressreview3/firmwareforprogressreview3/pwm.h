@@ -12,9 +12,9 @@
 // Higher duty = higher Vpi_in = LOWER peak current (the op amp inverts).
 // 0.32 to 0.61 is about 1.6V to 3.05V, assuming Rop1 4.7k and Rop2 10k like the slides.
 // Confirm R20 and R17 on your board. Widen these for bench tests if needed.
-#define PWM_DUTY_MIN     0.32f
-#define PWM_DUTY_MAX     0.61f
-#define PWM_DUTY_START   PWM_DUTY_MAX   // start at the lowest current limit
+#define PWM_DUTY_MIN     0.30f
+#define PWM_DUTY_MAX     0.50f
+#define PWM_DUTY_START   PWM_DUTY_MIN   // start at the lowest current limit
 
 // ---- Calculated from the settings above (do not edit) ----
 // Fast PWM mode 7: f = F_CPU / (N * (TOP + 1))

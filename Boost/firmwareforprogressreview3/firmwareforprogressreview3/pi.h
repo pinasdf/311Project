@@ -12,11 +12,11 @@
 // The UC3843 op amp inverts, so a HIGHER duty means a LOWER peak current.
 // If Vout is too low we need more current, so the duty must go down.
 // -1.0f = duty decreases when the error is positive (correct for this board)
-#define PI_DIR       (-1.0f)
+#define PI_DIR       (1.0f)
 
 #define PI_OUT_MIN   PWM_DUTY_MIN
 #define PI_OUT_MAX   PWM_DUTY_MAX
-#define PI_BIAS      PWM_DUTY_MAX       // duty when error and integral are zero
+#define PI_BIAS      PWM_DUTY_MIN       // duty when error and integral are zero
 
 #define PI_DT_S      (1.0f / (float)LOOP_RATE_HZ)   // time step, matches the loop rate
 
