@@ -4,8 +4,6 @@
 
 adc.c
 
-test.c
-
 main.c
 
 ovp.c

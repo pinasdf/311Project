@@ -5,10 +5,10 @@
 #include "timer.h"
 
 /* Values from the lecture slides */
-#define VOLTAGE_KP  20.0f
-#define VOLTAGE_KI  10.0f
+#define VOLTAGE_KP  1.8f
+#define VOLTAGE_KI  0.0f
 #define T_SAMPLE    (1.0f / (float)TICK_HZ)
-#define PI_LIMIT    1590000.0f
+#define PI_LIMIT    2500.0f
 
 /* Timer0 TOP (OCR0A = 159 -> 100 kHz PWM) */
 #define PWM_TOP     159
