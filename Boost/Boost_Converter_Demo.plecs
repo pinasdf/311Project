@@ -9288,12 +9288,12 @@ Plecs {
           }
           Parameter {
             Variable      "kp"
-            Value         "20"
+            Value         "1.8"
             Show          off
           }
           Parameter {
             Variable      "ki"
-            Value         "10"
+            Value         "1000"
             Show          off
           }
           Parameter {
@@ -11933,7 +11933,7 @@ Plecs {
           TimeRange     "0.0"
           ScrollingMode "1"
           SingleTimeAxis "1"
-          Open          "1"
+          Open          "0"
           Ts            "-1"
           SampleLimit   "0"
           XAxisLabel    "Time / s"

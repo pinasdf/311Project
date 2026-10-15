@@ -5,8 +5,8 @@
 #include "timer.h"
 
 /* Values from the lecture slides */
-#define VOLTAGE_KP  1.8f
-#define VOLTAGE_KI  0.0f
+#define VOLTAGE_KP  1.8f //1.8
+#define VOLTAGE_KI 1000.0f //1000
 #define T_SAMPLE    (1.0f / (float)TICK_HZ)
 #define PI_LIMIT    2500.0f
 
