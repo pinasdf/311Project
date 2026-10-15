@@ -8707,7 +8707,7 @@ Plecs {
       Schematic {
         Location      [0, 87; 1920, 1002]
         ZoomFactor    1.33333
-        SliderPosition [19, 15]
+        SliderPosition [19, -1]
         ShowBrowser   off
         BrowserWidth  100
         Component {
@@ -8758,7 +8758,7 @@ Plecs {
           LabelPosition west
           Parameter {
             Variable      "R"
-            Value         "5"
+            Value         "50"
             Show          on
           }
         }
