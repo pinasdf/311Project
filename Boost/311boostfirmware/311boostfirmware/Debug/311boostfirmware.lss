@@ -611,10 +611,10 @@ uint8_t pi_get_compare(void)
 		duty = 110.0f;
 		}
 		
-		else if (duty < 40.0f){
+		else if (duty < 37.0f){
  3b8:	20 e0       	ldi	r18, 0x00	; 0
  3ba:	30 e0       	ldi	r19, 0x00	; 0
- 3bc:	40 e2       	ldi	r20, 0x20	; 32
+ 3bc:	44 e1       	ldi	r20, 0x14	; 20
  3be:	52 e4       	ldi	r21, 0x42	; 66
  3c0:	c7 01       	movw	r24, r14
  3c2:	b6 01       	movw	r22, r12
@@ -639,12 +639,12 @@ uint8_t pi_get_compare(void)
  3de:	08 c0       	rjmp	.+16     	; 0x3f0 <pi_get_compare+0x88>
 		}
 		
-		else if (duty < 40.0f){
-		duty = 40.0f;
+		else if (duty < 37.0f){
+		duty = 37.0f;
  3e0:	0f 2e       	mov	r0, r31
  3e2:	c1 2c       	mov	r12, r1
  3e4:	d1 2c       	mov	r13, r1
- 3e6:	f0 e2       	ldi	r31, 0x20	; 32
+ 3e6:	f4 e1       	ldi	r31, 0x14	; 20
  3e8:	ef 2e       	mov	r14, r31
  3ea:	f2 e4       	ldi	r31, 0x42	; 66
  3ec:	ff 2e       	mov	r15, r31
