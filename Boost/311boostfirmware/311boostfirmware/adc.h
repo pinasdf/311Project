@@ -5,7 +5,7 @@
 
 /* AVCC reference. For best accuracy set this to the measured AVCC
  * voltage in mV (for example 4980) instead of the nominal 5000.      */
-#define ADC_VREF_MV      5017UL
+#define ADC_VREF_MV      4995UL
 
 /* Output-voltage divider (schematic: R22 = top, from 5V; R24 = bottom,
  * to GND; C14 = 10 nF across R24 filters it). Gvs = Rb / (Ra + Rb).

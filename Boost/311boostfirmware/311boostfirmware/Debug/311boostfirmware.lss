@@ -144,7 +144,7 @@ uint16_t adc_read_vout_mV(void)
     /* Vout_mV = raw * (Vref / Gvs) / 1024 = raw * ADC_FULLSCALE_MV / 1024              */
     return (uint16_t)((raw * ADC_FULLSCALE_MV) / 1024UL);
   c8:	9c 01       	movw	r18, r24
-  ca:	a9 eb       	ldi	r26, 0xB9	; 185
+  ca:	ab e9       	ldi	r26, 0x9B	; 155
   cc:	ba e1       	ldi	r27, 0x1A	; 26
   ce:	0e 94 76 04 	call	0x8ec	; 0x8ec <__umulhisi3>
   d2:	dc 01       	movw	r26, r24
