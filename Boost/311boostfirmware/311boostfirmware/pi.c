@@ -51,11 +51,11 @@ uint8_t pi_get_compare(void)
 	float duty = PI_out * PWM_TOP / (2.0f * PI_LIMIT) + PWM_TOP / 2.0f;
 
 	if (duty > 110.0f) {
-		duty = 110.0f;
+		duty = 110.0f;	
 		}
 		
-		else if (duty < 37.0f){
-		duty = 37.0f;
+		else if (duty < 50.0f){
+		duty = 50.0f;
 		}
 
 	return (uint8_t)duty;
