@@ -5,7 +5,7 @@
 #include "timer.h"
 #include "ovp.h"
 
-#define VTARGET_MV  5000          /* 5.0 V regulated target */
+#define VTARGET_MV  5000      /* 5.0 V regulated target */
 #define DEBUG_PIN   PB0           /* Timing probe on PB0    */
 
 int main(void)

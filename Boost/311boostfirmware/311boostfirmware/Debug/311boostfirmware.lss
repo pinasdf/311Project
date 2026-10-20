@@ -144,7 +144,7 @@ uint16_t adc_read_vout_mV(void)
     /* Vout_mV = raw * (Vref / Gvs) / 1024 = raw * ADC_FULLSCALE_MV / 1024              */
     return (uint16_t)((raw * ADC_FULLSCALE_MV) / 1024UL);
   c8:	9c 01       	movw	r18, r24
-  ca:	a2 ea       	ldi	r26, 0xA2	; 162
+  ca:	a9 eb       	ldi	r26, 0xB9	; 185
   cc:	ba e1       	ldi	r27, 0x1A	; 26
   ce:	0e 94 76 04 	call	0x8ec	; 0x8ec <__umulhisi3>
   d2:	dc 01       	movw	r26, r24
@@ -441,8 +441,8 @@ void pi_controller(uint16_t V_out, uint16_t V_ref)
 	float Int_step = (float)V_err * VOLTAGE_KI * T_SAMPLE;
  24c:	20 e0       	ldi	r18, 0x00	; 0
  24e:	30 e0       	ldi	r19, 0x00	; 0
- 250:	4a e7       	ldi	r20, 0x7A	; 122
- 252:	54 e4       	ldi	r21, 0x44	; 68
+ 250:	40 e2       	ldi	r20, 0x20	; 32
+ 252:	51 e4       	ldi	r21, 0x41	; 65
  254:	c5 01       	movw	r24, r10
  256:	b4 01       	movw	r22, r8
  258:	0e 94 09 04 	call	0x812	; 0x812 <__mulsf3>
@@ -608,10 +608,10 @@ uint8_t pi_get_compare(void)
  3b0:	0e 94 04 04 	call	0x808	; 0x808 <__gesf2>
  3b4:	18 16       	cp	r1, r24
  3b6:	5c f0       	brlt	.+22     	; 0x3ce <pi_get_compare+0x66>
-		duty = 110.0f;
+		duty = 110.0f;	
 		}
 		
-		else if (duty < 50.0f){
+		else if (duty <50.0f){
  3b8:	20 e0       	ldi	r18, 0x00	; 0
  3ba:	30 e0       	ldi	r19, 0x00	; 0
  3bc:	48 e4       	ldi	r20, 0x48	; 72
@@ -627,7 +627,7 @@ uint8_t pi_get_compare(void)
 	float duty = PI_out * PWM_TOP / (2.0f * PI_LIMIT) + PWM_TOP / 2.0f;
 
 	if (duty > 110.0f) {
-		duty = 110.0f;
+		duty = 110.0f;	
  3ce:	0f 2e       	mov	r0, r31
  3d0:	c1 2c       	mov	r12, r1
  3d2:	d1 2c       	mov	r13, r1
@@ -639,7 +639,7 @@ uint8_t pi_get_compare(void)
  3de:	08 c0       	rjmp	.+16     	; 0x3f0 <pi_get_compare+0x88>
 		}
 		
-		else if (duty < 50.0f){
+		else if (duty <50.0f){
 		duty = 50.0f;
  3e0:	0f 2e       	mov	r0, r31
  3e2:	c1 2c       	mov	r12, r1

@@ -54,7 +54,7 @@ uint8_t pi_get_compare(void)
 		duty = 110.0f;	
 		}
 		
-		else if (duty < 50.0f){
+		else if (duty <50.0f){
 		duty = 50.0f;
 		}
 
